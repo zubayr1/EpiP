@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "317275618826",
+    "firebase_url": "https://epiphany-00922.firebaseio.com",
+    "project_id": "epiphany-00922",
+    "storage_bucket": "epiphany-00922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317275618826:android:664ed73bb2f4d676",
+        "android_client_info": {
+          "package_name": "com.example.zub.epiphany_atlantic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317275618826-f7fn04tthqfp2a24nbd6uojaa0m8hu36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zub.epiphany_atlantic",
+            "certificate_hash": "f45d666e9c3a7a34690fa949cca30b1014064f26"
+          }
+        },
+        {
+          "client_id": "317275618826-17g43upsqh0da3ffbk61jregh3212rgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATXNRDWmQVwJxItE9YGxRSX_IejR9V6I4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317275618826-17g43upsqh0da3ffbk61jregh3212rgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

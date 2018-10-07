@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#fff"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="4dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_background"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_user"
+                android:layout_marginTop="6dp"
+                android:id="@+id/profile_button"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="44dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/name_logo"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="EpiPhany"
+                android:textColor="#000"
+                android:paddingTop="7dp"
+                android:paddingStart="70dp"
+                android:textSize="20sp"
+                android:id="@+id/homeText"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="right"
+            android:paddingEnd="22dp"
+            android:paddingTop="8dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                android:id="@+id/search"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_paper_plane"
+                android:id="@+id/new_message"
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_photo_camera"
+                android:id="@+id/camera_open"
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_stop"
+                android:id="@+id/mute_notification"
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logout"
+                android:id="@+id/logout"
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="46dp"
+        >
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/home_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="22dp"
+        android:elevation="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/bottom_nav_view_background"
+            android:elevation="4dp"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/homeR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/bnb_home_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/ic_home"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/bnb_home_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_home_max"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/messageR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/bnb_message_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="9dp"
+                    android:src="@drawable/ic_chat"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/bnb_message_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_message_max"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:id="@+id/bnb_post_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_plus" />
+
+            <RelativeLayout
+                android:id="@+id/notificationR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/bnb_notification_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="9dp"
+                    android:src="@drawable/ic_notification"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/bnb_notification_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/ic_notification_max"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settingsR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/bnb_settings_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="7dp"
+                    android:src="@drawable/ic_settings"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/bnb_settings_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingTop="4.5dp"
+                    android:src="@drawable/ic_settings_max"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

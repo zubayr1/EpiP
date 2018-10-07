@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EpiPhany_AtlanTic</string>
+    <string name="SignIn">Sign In</string>
+
+    <string name="facebsignIn">Sign In with FACEBOOK</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

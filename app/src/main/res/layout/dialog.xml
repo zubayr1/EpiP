@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="170dp"
+    android:id="@+id/postcard"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@drawable/dialogtop_background"
+       android:layout_weight="1"
+       >
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:background="@drawable/dialogtext_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="Welcome to Epiphany! Explore the World of Skills"
+            android:textColor="#3369ce"
+            android:gravity="center"
+            android:id="@+id/dialogText"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Take Me There"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:layout_weight=".1"
+            android:textAllCaps="false"
+            android:id="@+id/dialogButton"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialogtop_background"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_weight="4"
+        android:background="@drawable/dialogtext_background"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userDP"
+            android:src="@drawable/defimg"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            >
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:background="@drawable/dialog_button_style"
+                android:layout_marginEnd="6dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:drawableRight="@drawable/ic_photo_camera_small"
+                android:alpha=".6"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:id="@+id/editDP"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userDPdemo"
+            android:src="@drawable/defimg"
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="1dp"
+            >
+
+
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dialog_button_style"
+                android:layout_marginStart="6dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:drawableRight="@drawable/ic_up_arrow"
+                android:alpha=".7"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:id="@+id/uploadDP"
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00000000"
+        >
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            tools:visibility="gone" />
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_box_button_style"
+            android:id="@+id/removeDP"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:text="Remove Dp"
+            />
+        
+        
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
